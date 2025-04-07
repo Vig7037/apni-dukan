@@ -3,9 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order</title>
-</head>
-<body>
+    <meta property="og:title" content="Apni Dukan :- where you can buy things" />
+    <meta property="og:type" content="Apni Dukan" />
+    <meta property="og:image" content="https://img.freepik.com/free-vector/shop-with-sign-we-are-open_52683-38687.jpg" />
+    <meta property="og:url" content="https://apni-dukan-nine.vercel.app/" />
+    <title>Apni Dukan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
     
+    
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+  <header>
+        <div class="bg-white">
+            <img class="absolute inset-0 -z-10 size-full object-cover object-right md:object-center" src="data:image/jpeg;base64,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" alt="">
+            <header class="absolute inset-x-0 top-0 z-50">
+              <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+                <div class="flex lg:flex-1">
+                  <a href="#" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Your Company</span>
+                    <img class="h-8 w-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeuYz_jSKLBzUqJ7w4hJaX66NtJnN3F30l-Q&s" alt="">
+                  </a>
+                </div>
+             
+                <div class="hidden lg:flex lg:gap-x-12">
+                  <div>
+                   
+                    <button style="justify-self: center;" type="submit" class="
+                    border-2 flex w-30 justify-center rounded-md   px-3 py-1.5 text-sm/6 font-semibold text-black shadow-xs hover:border-gray-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 wow animate__animated animate__bounceIn animate__delay-1s">Services</button>
+               
+                </div>
+                <div>
+                   
+                    <button style="justify-self: center;" type="submit" class="
+                    border-2 flex w-30 justify-center rounded-md   px-3 py-1.5 text-sm/6 font-semibold text-black shadow-xs hover:border-gray-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 wow animate__animated animate__bounceIn animate__delay-1s">Market Place</button>
+               
+                </div>
+                <div>
+                   
+                    <button style="justify-self: center;" type="submit" class="
+                    border-2 flex w-30 justify-center rounded-md   px-3 py-1.5 text-sm/6 font-semibold text-black shadow-xs hover:border-gray-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 wow animate__animated animate__bounceIn animate__delay-1s">Company</button>
+               
+                </div>
+                <div>
+                   
+                    <button style="justify-self: center;" type="submit" class="
+                    border-2 flex w-30 justify-center rounded-md   px-3 py-1.5 text-sm/6 font-semibold text-black shadow-xs hover:border-gray-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 wow animate__animated animate__bounceIn animate__delay-1s">Contact</button>
+               
+                </div>
+                </div>
+                <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                  <a href="index.html" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+                </div>
+              </nav>
+              <!-- Mobile menu, show/hide based on menu open state. -->
+              <div class="lg:hidden" role="dialog" aria-modal="true">
+                <!-- Background backdrop, show/hide based on slide-over state. -->
+                <div class="fixed inset-0 z-50"></div>
+
+                </div>
+              </div>
+            </header>
+          
+            <div class="relative isolate px-6 pt-14 lg:px-8">
+              <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+                <div class="relative left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+              </div>
+              <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+                <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+                  
+                </div>
+                <div class="text-center">
+                  <h3 class="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl"> 🙏 𝑻𝒉𝒂𝒏𝒌 𝒀𝒐𝒖 𝒇𝒐𝒓 𝑽𝒊𝒔𝒊𝒕𝒊𝒏𝒈! </h3>
+                  <p class="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">“𝒪𝓊𝓇 𝒸𝓊𝓈𝓉𝑜𝓂𝑒𝓇𝓈 𝒶𝓇𝑒 𝓁𝒾𝓀𝑒 𝑔𝑜𝒹𝓈 𝓉𝑜 𝓊𝓈—𝓈𝑜 𝒸𝑜𝓂𝑒 𝑜𝓃 𝒾𝓃 𝓌𝒾𝓉𝒽 𝒶 𝓈𝓂𝒾𝓁𝑒, 𝒶𝓃𝒹 𝓉𝒶𝓀𝑒 𝒽𝑜𝓂𝑒 𝓅𝓁𝑒𝓃𝓉𝓎!”</p>
+                 
+                </div>
+            </div>
+          </div>
+    </header>
+
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <!-- Left Side: Copyright Text -->
+          <p class="col-md-4 mb-0 text-muted">&copy; 2025 Apni Dukan, Inc</p>
+  
+          <!-- Center: Logo -->
+          <div class="col-md-4 d-flex justify-content-center">
+              <a href="/" class="text-decoration-none text-dark">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeuYz_jSKLBzUqJ7w4hJaX66NtJnN3F30l-Q&s" 
+                       alt="Apni Dukan Logo" style="height: 40px;">
+              </a>
+          </div>
+  
+          <!-- Right Side: Navigation Links -->
+          <ul class="nav col-md-4 justify-content-end">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+          </ul>
+      </footer>
+  </div>
+
 </body>
 </html>
